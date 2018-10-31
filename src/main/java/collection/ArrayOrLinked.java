@@ -47,8 +47,10 @@ public class ArrayOrLinked {
          * 插入的数据量和插入的位置是决定两者性能的主要方面，
          * 我们可以通过修改这两个数据，来测试两者的性能
          */
-        long num = 20000; //表示要插入的数据量
-        int index = 10000; //表示从哪个位置插入
+        //表示要插入的数据量
+        long num = 20000;
+        //表示从哪个位置插入
+        int index = 10000;
         long time=System.currentTimeMillis();
         for(int i = 1; i < num; i++){
             list.add(index, i);
